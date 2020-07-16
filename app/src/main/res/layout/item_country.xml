@@ -34,42 +34,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium"
-            android:layout_marginBottom="70dp"
+            android:layout_marginTop="@dimen/margin_160"
             android:layout_weight="1"
+            android:singleLine="true"
             android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:text="Thailand"
+            android:text="@string/txt_location"
             android:textColor="@color/white" />
 
-    <LinearLayout
-            android:id="@+id/lLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:orientation="horizontal"
-            android:weightSum="2">
+        <TextView
+            android:id="@+id/tvMaxTour"
+            android:layout_below="@+id/tvLocation"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textColor="@color/white"
+            android:text="@string/txt_maxTours"/>
 
-            <TextView
-                android:id="@+id/tvMaxTour"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
-                android:textColor="@color/white"
-                android:text="3 Tours"/>
-
-            <TextView
-                android:id="@+id/tvAvgRating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_medium_2"
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:text="3"
-                android:layout_gravity="bottom"
-                android:drawableBottom="@drawable/ic_star_white_24dp"/>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tvAvgRating"
+            android:layout_toEndOf="@id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:layout_marginBottom="@dimen/margin_50"
+            android:background="@drawable/round_view"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="@string/txt_avgRate"
+            android:layout_alignParentBottom="true"
+            android:drawableBottom="@drawable/ic_star_white_24dp"/>
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

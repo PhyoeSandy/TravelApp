@@ -7,4 +7,9 @@
     <string name="lbl_price_fragment">Price Fragment</string>
     <string name="lbl_home_fragment">Home Fragment</string>
     <string name="lbl_empty">There is no avaliable tours yet</string>
+    <string name="txt_location">Gunung Sahari Raya</string>
+    <string name="txt_name">10 nights for two/ all inclusive</string>
+    <string name="txt_price">$ 245.50</string>
+    <string name="txt_maxTours">3 Tours</string>
+    <string name="txt_avgRate">3</string>
 </resources>
