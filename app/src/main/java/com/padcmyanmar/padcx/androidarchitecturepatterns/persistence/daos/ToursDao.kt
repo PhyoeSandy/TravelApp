@@ -21,6 +21,9 @@ interface ToursDao {
     @Query("SELECT * FROM Tours WHERE Status = 1")
     fun getAllPopularTours() : LiveData<List<ToursVO>>
 
+    @Query("SELECT * FROM Tours")
+    fun getAllTours() : LiveData<List<ToursVO>>
+
     @Query("SELECT * FROM Tours WHERE Name = :toursName")
     fun getToursByName(toursName: String) : LiveData<ToursVO>
 

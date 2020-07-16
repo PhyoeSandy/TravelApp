@@ -61,4 +61,14 @@ dependencies {
 
     // SwipeRefresh
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    // lifecycle components
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    kapt "android.arch.lifecycle:compiler:$lifecycle_version"
+
+    // Annotation processor
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    // Ovservable into LiveData
+    implementation "android.arch.lifecycle:reactivestreams:1.1.0"
 }
