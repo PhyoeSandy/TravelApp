@@ -35,4 +35,13 @@ dependencies {
 
     // material components
     implementation 'com.google.android.material:material:1.2.0-alpha03'
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+    // RX
+    implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
 }
