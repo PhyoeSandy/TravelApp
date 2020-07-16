@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.padcmyanmar.padcx.androidarchitecturepatterns.R
+import com.padcmyanmar.padcx.androidarchitecturepatterns.activities.ToursDetailsActivity
 import com.padcmyanmar.padcx.androidarchitecturepatterns.adapters.CountryListAdapter
 import com.padcmyanmar.padcx.androidarchitecturepatterns.adapters.ToursListAdapter
 import com.padcmyanmar.padcx.androidarchitecturepatterns.data.vos.ToursVO
@@ -97,7 +98,7 @@ class HomeFragment : BaseFragment(), HomeView {
     }
 
     override fun navigateToToursDetails(toursName: String) {
-
+        startActivity(ToursDetailsActivity.newIntent(requireContext(), toursName))
     }
 
     override fun showErrorMessage(message: String) {
