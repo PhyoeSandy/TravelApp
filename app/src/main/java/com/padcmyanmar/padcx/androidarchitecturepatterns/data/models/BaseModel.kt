@@ -1,6 +1,8 @@
 package com.padcmyanmar.padcx.androidarchitecturepatterns.data.models
 
+import android.content.Context
 import com.padcmyanmar.padcx.androidarchitecturepatterns.network.ToursApi
+import com.padcmyanmar.padcx.androidarchitecturepatterns.persistence.db.ToursDB
 import com.padcmyanmar.padcx.androidarchitecturepatterns.utils.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -14,7 +16,12 @@ import java.util.concurrent.TimeUnit
  */
 abstract class BaseModel {
 
-    protected var mToursApi : ToursApi
+    private lateinit var mDB : ToursDB
+    private var mToursApi : ToursApi
+
+    fun initDatabase(context: Context){
+        mDB = ToursDB.getDBInstance(context)
+    }
 
     init {
         val mokHttpClient = OkHttpClient.Builder()
